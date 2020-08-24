@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+body {
+    overflow: hidden;
+    font-size: 1.25em !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.toolbar {
+    padding: .5em;
+    background-color: rgb(83, 83, 83);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mailbox {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 95vh;
+    position: relative;
+    border:solid;
+    border-color: #eeeeee;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.reader-body {
+    overflow: hidden;
+    height: 75vh;
+    position: relative;
+    border:solid;
+    border-color: #eeeeee;
 }
 
-.App-link {
-  color: #61dafb;
+.mailbox a {
+    text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.alert {
+    padding: 0 !important;
+}
+
+.reader {
+    margin-top: 0em !important;
+    margin-right: .5em !important;
+    height: 50vh !important;
+}
+
+.reader .header {
+    background-color: #eeeeee;
+}
+
+iframe {
+    border-style: none;
+}
+
+.spamWords .label {
+    margin: .5em;
 }
